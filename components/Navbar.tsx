@@ -5,8 +5,12 @@ import { Popover } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
+import { useRouter } from 'next/router'
 
 function Navbar() {
+
+  const router = useRouter();
+
   return (
     <Popover>
     <div className="mx-auto  flex justify-center items-center px-6 py-2 h-16 bg-[#1F2833] text-white">
@@ -64,7 +68,7 @@ function Navbar() {
 
 
       <div className=" hidden lg:block text-[#66FCF1]">
-        <Link href="/" className='font-bold'>Sign in | </Link>
+        <Link href="/login_screen" className='font-bold'>Sign in | </Link>
         <Link href="/" className=' font-bold'>Create account</Link>
       </div>
 
