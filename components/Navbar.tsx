@@ -69,7 +69,7 @@ function Navbar() {
 
       <div className=" hidden lg:block text-[#66FCF1]">
         <Link href="/login_screen" className='font-bold'>Sign in | </Link>
-        <Link href="/" className=' font-bold'>Create account</Link>
+        <Link href="/create_screen" className=' font-bold'>Create account</Link>
       </div>
 
 

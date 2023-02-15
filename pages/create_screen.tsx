@@ -4,7 +4,7 @@ import andamon_logo from '../public/andamonToken-Logo.png'
 import meta_mask_logo from '../public/MetaMask.png'
 import Link from 'next/link'
 
-export default function login_screen() {
+export default function create_screen () {
   return (
     <div className="container px-4 mx-auto h-1/2">
       <div className="border-4 mt-20 py-2 px-4 pb-20 h-full">
@@ -15,15 +15,15 @@ export default function login_screen() {
           </div>
           
           <div className="flex gap-4">
-            <button className='bg-blue-500 text-white font-bold py-2 px-4 border-b-4 border-blue-700 rounded'>Don’t have account ?</button>
-            <button className='bg-blue-500 text-white font-bold py-2 px-4 border-b-4 border-blue-700 rounded'>Create account</button>
+            <button className='bg-blue-500 text-white font-bold py-2 px-4 border-b-4 border-blue-700 rounded'>Already have an account?</button>
+            <button className='bg-blue-500 text-white font-bold py-2 px-4 border-b-4 border-blue-700 rounded'>Sign in</button>
           </div>
         </div>
 
         <div className="flex items-center justify-between">
 
           <div className="grid place-content-center w-1/2">
-            <p className=' text-center font-bold text-gray-700 text-xl'>Sign in with Metamask</p>
+            <p className=' text-center font-bold text-gray-700 text-xl'>Create account in with Metamask</p>
             <Image src={meta_mask_logo} alt='/' className='w-96'/>
           </div>
 
@@ -44,12 +44,18 @@ export default function login_screen() {
               <div className="mb-6 ">
                 <label className='block text-gray-700 text-xl font-bold mb-2'>Password</label>
                 <input className=' text-xl w-4/5 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline
-    ' type="text" placeholder="Password" />
+    ' type="text" placeholder="8+ characters" />
+              </div>
+
+              <div className="mb-6 ">
+                <label className='block text-gray-700 text-xl font-bold mb-2'>Password</label>
+                <input className=' text-xl w-4/5 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline
+    ' type="text" placeholder="8+ characters" />
               </div>
             </form>
 
             <div className="flex items-center justify-between w-4/5  h-20">
-              <button className=' h-4/5 w-1/2 text-2xl bg-[#1F2833] text-white font-bold py-2 px-4 border-b-4 border-[#18274B] rounded-full'>Sign in</button>
+              <button className=' h-4/5 w-1/2 text-2xl bg-[#1F2833] text-white font-bold py-2 px-4 border-b-4 border-[#18274B] rounded-full'>Create account</button>
               <Link className='text-sm font-bold inline-block align-baseline' href="/">Forgot Password?</Link>
             </div>
             {/* ENDFROM */}
