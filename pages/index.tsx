@@ -12,10 +12,10 @@ import bankok_image from '../public/bankok-image.jpg'
 
 export default function Home() {
   return (
-    <div className=" container px-4 mx-auto ">
+    <div className=" container px-4 mx-auto font-work_sans">
 
       <div className="text-center mt-10 mb-5">
-        <p className='text-3xl'>Accommodation Promotions</p>
+        <p className='text-2xl font-bold'>Accommodation Promotions</p>
       </div>
 
       <div className="grid grid-cols-4 gap-2">
@@ -40,8 +40,8 @@ export default function Home() {
 
       {/* END-CARD */}
 
-      <div className="text-center mt-10 mb-5">
-        <p className='text-3xl'>Accommodation Promotions</p>
+      <div className="text-center mt-10 mb-5 font-bold">
+        <p className='text-2xl'>Accommodation Promotions</p>
       </div>
 
       <div className="grid grid-cols-4 gap-2">
@@ -65,8 +65,8 @@ export default function Home() {
       </div>
       {/* END-CARD */}
 
-      <div className="text-center mt-10 mb-5">
-        <p className='text-3xl'>Top destinations in Thailand</p>
+      <div className="text-center mt-10 mb-5 font-bold" >
+        <p className='text-2xl'>Top destinations in Thailand</p>
       </div>
 
       <div className="grid justify-items-center grid-cols-6 text-center">

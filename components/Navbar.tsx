@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <Popover>
-    <div className="mx-auto  flex justify-center items-center px-6 py-2 h-16 bg-[#1F2833] text-white">
+    <div className=" font-work_sans mx-auto  flex justify-center items-center px-6 py-2 h-16 bg-white text-gray-400 font-bold  drop-shadow-md shadow-gray-500">
       <Image src={andamon_logo} alt='/' className=' w-52' />
       <div className=" grow">
         <div className=" hidden  lg:flex items-center justify-center gap-2 md:gap-8">
@@ -27,7 +27,7 @@ function Navbar() {
 
 
       <div className="lg:hidden flex grow items-center justify-end">
-        <Popover.Button className="inline-flex items-center justify-center rounded-md  text-white focus:outline-none focus:ring-inset focus:ring-indigo-500">
+        <Popover.Button className="inline-flex items-center justify-center rounded-md text-orange-400 focus:outline-none focus:ring-inset focus:ring-indigo-500">
           <span className=' sr-only'>Open menu</span>
           <Bars3Icon className='h-6 w-6' aria-hidden="true" />
         </Popover.Button>
@@ -67,9 +67,8 @@ function Navbar() {
       </Popover.Panel>
 
 
-      <div className=" hidden lg:block text-[#66FCF1]">
-        <Link href="/login_screen" className='font-bold'>Sign in | </Link>
-        <Link href="/create_screen" className=' font-bold'>Create account</Link>
+      <div className=" hidden lg:block bg-[#FF8000] px-3 py-2 rounded-2xl text-white w-20 text-center">
+        <button>LOGIN</button>
       </div>
 
 
