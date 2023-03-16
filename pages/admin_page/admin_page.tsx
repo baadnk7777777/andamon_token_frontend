@@ -1,5 +1,5 @@
 import React from 'react'
-import meta_mask_logo from '../public/MetaMask.png'
+import meta_mask_logo from '../../public/MetaMask.png'
 import Image from 'next/image'
 
 export const admin_page = () => {
