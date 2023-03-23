@@ -1,6 +1,7 @@
-import andamon_logo from '../public/andamonToken-Logo.png'
+import andamon_logo from '../../public/andamonToken-Logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
+
 export default function dashboard() {
     return (
         <div className="container px-4 mx-auto h-1/2">
@@ -175,3 +176,4 @@ export default function dashboard() {
         </div>
     )
 }
+
