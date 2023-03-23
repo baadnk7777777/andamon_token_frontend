@@ -1,5 +1,4 @@
 import React from 'react'
-// import hotel_default from '../../public/hotel_default.jpg'
 import hotel_images from '../public/de_hotel.jpg'
 import Image from 'next/image'
 import { useRouter } from 'next/router';
@@ -9,7 +8,7 @@ export const hotel_modal = () => {
   const router = useRouter();
   function handleClick() {
     
-    router.push('../');
+    router.push('../pages/customer_page/hotel_detail.tsx');
   }
   return (
 
