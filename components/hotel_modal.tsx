@@ -8,7 +8,7 @@ export const hotel_modal = () => {
   const router = useRouter();
   function handleClick() {
     
-    router.push('../pages/customer_page/hotel_detail.tsx');
+    router.push('../customer_page/hotel_detail');
   }
   return (
 
