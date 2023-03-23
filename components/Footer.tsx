@@ -8,6 +8,9 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 
 function Footer() {
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
     return (
         <div className="p-4 text-black rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 mt-10">
             
