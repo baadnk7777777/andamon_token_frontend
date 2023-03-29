@@ -4,12 +4,21 @@ import andamon_logo from '../public/andamonToken-Logo.png'
 import { Popover } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import { useRouter } from 'next/router'
+
+import DropdownMenu from '../components/dropdownMenu'
+
+
 
 function Navbar() {
 
+
+
   const router = useRouter();
+
+  const hanndleLink = ()=> {
+    router.push('/login_screen');
+  }
 
   return (
     <Popover>
@@ -22,6 +31,7 @@ function Navbar() {
           <Link href="/">Flight</Link>
           <Link href="/">Coupons & Deals</Link>
           <Link href="/">Activity</Link>
+          <DropdownMenu/>
         </div>
       </div>
 
@@ -67,7 +77,7 @@ function Navbar() {
       </Popover.Panel>
 
 
-      <div className=" hidden lg:block bg-[#FF8000] px-3 py-2 rounded-2xl text-white w-20 text-center">
+      <div onClick={()=> hanndleLink()} className=" hidden lg:block bg-[#FF8000] px-3 py-2 rounded-2xl text-white w-20 text-center">
         <button>LOGIN</button>
       </div>
 

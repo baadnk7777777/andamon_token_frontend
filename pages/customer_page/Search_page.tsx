@@ -1,9 +1,11 @@
+import { useRouter } from 'next/router';
 import React, { useState } from 'react'
 
 
 import "react-datepicker/dist/react-datepicker.css";
 
 export const Search_page = () => {
+    const router = useRouter();
     const [startDate, setStartDate] = useState(new Date());
     return (
         <div className=" h-screen font-work_sans flex flex-col justify-center">
@@ -33,7 +35,7 @@ export const Search_page = () => {
                     </div>
 
                     <div className="mt-10">
-                        <button className='w-full bg-orange-400 p-2 rounded-lg font-bold text-white'>SEARCH</button>
+                        <button onClick={() => {router.push("/customer_page/hotel_search_page")}} className='w-full bg-orange-400 p-2 rounded-lg font-bold text-white'>SEARCH</button>
                     </div>
 
                 </div>

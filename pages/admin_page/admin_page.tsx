@@ -1,8 +1,10 @@
 import React from 'react'
 import meta_mask_logo from '../../public/MetaMask.png'
 import Image from 'next/image'
+import { useRouter } from 'next/router';
 
 export const admin_page = () => {
+    const router = useRouter();
     return (
         <div className=" h-screen font-work_sans ">
 
@@ -10,8 +12,9 @@ export const admin_page = () => {
             <Image src={meta_mask_logo} alt='/' className='w-96'/>
             </div>
             <div className="flex justify-center mt-24 gap-8 font-bold">
-                <button className=' w-52 text-orange-400 px-3 py-2 border-orange-400 border-2 rounded-xl hover:bg-orange-400 hover:text-white'>MINT TOKEN</button>
-                <button className='w-52 text-orange-400 px-3 py-2 border-orange-400 border-2 rounded-xl hover:bg-orange-400 hover:text-white'>PAY HOTEL</button>
+                <button onClick={() => { router.push("/admin_page/admin_mint_page") }}
+ className=' w-52 text-orange-400 px-3 py-2 border-orange-400 border-2 rounded-xl hover:bg-orange-400 hover:text-white'>MINT TOKEN</button>
+                <button onClick={() => { router.push("/admin_page/admin_payHotel_page") }} className='w-52 text-orange-400 px-3 py-2 border-orange-400 border-2 rounded-xl hover:bg-orange-400 hover:text-white'>PAY HOTEL</button>
             </div>
             
         </div>

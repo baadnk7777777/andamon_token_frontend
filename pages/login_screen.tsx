@@ -4,9 +4,12 @@ import andamon_logo from '../public/andamonToken-Logo.png'
 import meta_mask_logo from '../public/MetaMask.png'
 import Link from 'next/link'
 import { Connector, useAccount, useBalance, useConnect, useDisconnect } from 'wagmi'
+import { useRouter } from 'next/router'
 
 
 const LoginScreen: React.FC = () => {
+  const router = useRouter();
+  
 
   const { connectAsync, connectors } = useConnect();
 
@@ -27,6 +30,11 @@ const LoginScreen: React.FC = () => {
 
   const {data, isError, isLoading} = useBalance();
 
+  // if(address) {
+  //   router.push('/');
+  // }else {
+  //   router.push('/customer_page/Search_page');
+  // }
 
   return (
     <div className=" font-work_sans container px-4 mx-auto h-1/2">
